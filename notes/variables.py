@@ -8,3 +8,5 @@ print(grade)
 
 grade = 57
 print(grade)
+input("What is your name:")
+print(input)
