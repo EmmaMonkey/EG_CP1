@@ -1,6 +1,6 @@
 #EG 2nd Mad Lib
 
-adjective = input ("Give me a cool adjective YOGURT!")
+adjective = input ("Give me a cool adjective !YOGURT!")
 
 animal =  input ("Give me an animal that you really really like." )
 
@@ -28,4 +28,4 @@ verbed = input("Give me a verb ending in -ED Jit!")
 
 exclamation = input("Give me an exclamation!")
 
-print("Eve was a(n),"+adjective+"")
+print("Eve was a(n),"+adjective+", She was always happy tho. She always said her spirit animal was,"+animal+", Everyone was very annoyed by her and her spirit animal thing that they thought she was,"+adjective+",She also loved to,"+verbing+",and always carried a,"+silly_object+",This bothered Emma, and she had to betray him because she wanted to and there was no other choice, so she "+type_of_dance+",on him. Emma was full of it he was angry up to his."+body_Part+",He wanted to get revenge so he called up,"+famous_person+", Emma was so mad he,"+verbed+","+famous_person+",")
