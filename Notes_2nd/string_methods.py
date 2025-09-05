@@ -9,7 +9,7 @@ name = input("What is your name").strip().lower().capitalize().title()
 age = int(input("Gurt how old are you"))
 #print("Hello {}, It is nice to meet you! I cant believe you are {:.2f}!".format(name, age))
 print(f"Hello {name}, It is nice to meet you! I cant believe you are {age:.1f}!")
-#age = floatinput("Gurt how old are you")
+age = floatinput("Gurt how old are you") # type: ignore
 
 #print(age.isdigit())
 
