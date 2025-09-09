@@ -1,7 +1,19 @@
 # EG 2nd Basic Calculator
 
-print(" This is a calculator, addition is (+) ")
+print(" This is a calculator, addition is (+). Subtraction is (-). Exponents are (**). Multiplication is (*). Division is (/). Mod is (%). Integer division is (//).")
 number1 = int(input("give me a number\n"))
-number2 = input ("give me another number")
-
-print(number1*number2)
+number2 = int(input("give me another number\n"))
+product1 = (number1+number2)
+product2 = (number1-number2)
+product3 = (number1**number2)
+product4 = (number1*number2)
+product5 = (number1/number2)
+product6 = (number1%number2)
+product7 = (number1//number2)
+print(f"{number1}+{number2}={product1:.2f}")
+print(f"{number1}-{number2}={product2:.2f}")
+print(f"{number1}**{number2}={product3:.2f}")
+print(f"{number1}*{number2}={product4:.2f}")
+print(f"{number1}/{number2}={product5:.2f}")
+print(f"{number1}%{number2}={product6:.2f}")
+print(f"{number1}//{number2}={product7:.2f}")
