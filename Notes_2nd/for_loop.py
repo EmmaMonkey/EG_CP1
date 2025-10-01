@@ -10,6 +10,7 @@ for num in nums:
         print(f"{div} is half of {num}. And it is still a large number!" )
     else:
         print(num)
+
 print("We completed all the numbers!")
 time.sleep(3)
 
@@ -23,6 +24,6 @@ for x in range(2,11,2):
     time.sleep(3)
 
 print("Count down")
-for c in range(10,0, -1):
+for x in range(10,0, -1):
     print(x)
     time.sleep(1)
