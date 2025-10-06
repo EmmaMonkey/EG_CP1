@@ -36,23 +36,23 @@ print("""
 choices = ["rock", "paper", "scissors"]
 
 while True:
-    user = input("Rock, paper, or scissors? (or type 'quit' to stop): ").lower()
+    user = input("Rock, paper, or scissors? Or type quit to stop playing: ")
 
     if user == "quit":
-        print("Bye! Thanks for playing.")
+        print("Bye Monkey!")
         break
     if user not in choices:
-        print("That's not a valid choice. Try again.")
+        print("That's not one of the choices. ")
         continue
 
-    computer = random.choice(choices)
-    print(f"Computer chose {computer}.")
+    Me = random.choice(choices)
+    print(f"I chose {Me}.")
 
-    if user == computer:
+    if user == Me:
         print("It's a tie!\n")
-    elif (user == "rock" and computer == "scissors") or \
-         (user == "scissors" and computer == "paper") or \
-         (user == "paper" and computer == "rock"):
+    elif (user == "rock" and Me == "scissors") or \
+         (user == "scissors" and Me == "paper") or \
+         (user == "paper" and Me == "rock"):
         print("You win!\n")
     else:
-        print("Computer wins!\n")
+        print("I beat you!\n")
