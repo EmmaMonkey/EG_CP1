@@ -36,7 +36,7 @@ print("""
 choices = ["rock", "paper", "scissors"]
 
 while True:
-    user = input("Rock, paper, or scissors? Or type quit to stop playing: ")
+    user = input("Rock, paper, or scissors? Or type quit to stop playing: ").lower()
 
     if user == "quit":
         print("Bye Monkey!")
