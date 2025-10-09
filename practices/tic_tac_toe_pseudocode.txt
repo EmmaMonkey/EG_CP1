@@ -1,0 +1,37 @@
+# EG 2nd Tic Tac Toe Pseudocode 
+
+Import random 
+
+Setup a 3x3 grid for the board using a list 
+Start score for both computer and user from 0
+
+game:
+while True:
+    Players turn 
+    Display board
+    ask the player what spot they choose, replace the empty space in the board with an X
+    Player could also enter the word "exit" to quit the game
+    Check win conditions explained below
+
+    Computers turn:
+    while True: 
+        computer_choice variable is random.randint(1, 9)
+        computer_choice must be an empty space, represented by a "-", in the list or it restarts the loop
+        If not take it updates the chosen spot with an O abd exits the computer turn loop then displays board
+        Check win conditions explained below
+
+         Determining the winner:
+        Set other lists as all the win conditions  for each team 
+        After each turn compare the win conditions with the current board
+        If  win condition mathes the board, determine the winner and add a point to the winner and then clear the board and restart the game.
+        If the board fills up, clear the board and restart the game
+
+
+    Repeat each turn until a win happens or a tie
+        
+   
+
+
+
+
+
