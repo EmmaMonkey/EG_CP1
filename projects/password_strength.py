@@ -10,19 +10,38 @@ lowercase_requirement = False
 number_requirement = False 
 special_requirement = False
 
-# Step 2: Check for the factors 
-while True:
+#Define Special Characters
+special_characters = ["!","@","#","$","%","^","&","*","(",")","-","_","=","+",".",",","\"",":",";","<",">","?","[","]","}","{","|"]
+
+# Step 2: Check for the factors, if any requirements meet set the boolean to true
     # Length- 8 characters at least 
-    if len(password) >= 8:
-        length_requirement = True 
+if len(password) >= 8:
+    length_requirement = True
+    score += 1 
+# At least one uppercase letter 
+if any(char.isupper() for char in password):
+    uppercase_requirement = True
+    score +=1
+        
+ # At least  one lowercase letter 
+if any(char.islower() for char in password):
+    lowercase_requirement = True 
+    score += 1 
+
+# At least one number 
+   
+if any(char.isdigit() for char in password):
+    number_requirement = True 
+    score += 1 
+        
+# At least one special chararcter  
+for item in special_characters:
+    if item in password:
+        special_requirement = True
         score += 1 
-        continue 
-    # At least one uppercase letter 
-    check_upper = any(char.isupper() for char in password)
-    print(check_upper)
-    # At least  one lowercase letter 
-    # At least one number 
-    # At least one special chararcter  
+        break
+
+
 
 # Step 3: Calculate the safety of the password
 # Length requirement +1 point 
@@ -31,6 +50,11 @@ while True:
 # Containing a number +1 point
 # Containing a special character +1 point 
 
+# Display Password Strength Assesment
+print(f"Password Strength Assessment:\nLength (8+ Characters): {length_requirement}\nContains Uppercase:{uppercase_requirement}\nContains Lowercase: {lowercase_requirement}\nContains a Number: {number_requirement}\nContains a Special Character: {special_requirement}\n")
+
 # Step 4: Give a strength score
 # Add the points up and print with corresponding level of strength
+if score == 1 or score == 2:
+    print(f"Strength Score: {score}/5\nPassword Strength: Weak")
 # Tell the user what their missing in their password
