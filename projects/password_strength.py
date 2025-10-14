@@ -57,4 +57,13 @@ print(f"Password Strength Assessment:\nLength (8+ Characters): {length_requireme
 # Add the points up and print with corresponding level of strength
 if score == 1 or score == 2:
     print(f"Strength Score: {score}/5\nPassword Strength: Weak")
+elif score == 3:
+    print(f"Strength Score: {score}/5\nPassword Strength: Moderate")
+elif score == 4:
+    print(f"Strength Score: {score}/5\nPassword Strength: Strong")
+elif score == 5: 
+    print(f"Strength Score: {score}/5\nPassword Strength: Very Strong")
+else:
+    print("This shouldn't be possible")
 # Tell the user what their missing in their password
+
