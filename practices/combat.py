@@ -101,7 +101,7 @@ def main():
     if player["health"] <= 0:
         print("You have been defeated you loser!")
     elif monster["health"] <= 0:
-        print("You defeated the monster Your aura farming for real!")
+        print("You defeated the monster, your aura farming for real!")
     else:
         print("The battle ended unexpectedly.")
 
