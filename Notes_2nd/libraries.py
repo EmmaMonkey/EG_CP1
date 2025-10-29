@@ -5,7 +5,7 @@ number = random.randint(100,500)
 
 turtle.shape("turtle")
 turtle.color("pink")
-turtle.pensize(20)
+turtle.pensize(5)
 turtle.fillcolor("blue")
 turtle.begin_fill()
 for x in range(4):
