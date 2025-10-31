@@ -9,14 +9,6 @@ number = random.randint(100,500)
 turtle.color("black")
 turtle.pensize(5)
 turtle.penup()
-turtle.fillcolor("black")
 turtle.begin_fill()
-for x in range (4):
-    turtle.forward (500)
-    turtle.pendown()
-    turtle.left (100)
-    turtle.penup()
-    turtle.home()
-turtle.end_fill()
-    
+for x in range (4)
 
