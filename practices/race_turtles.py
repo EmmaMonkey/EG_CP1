@@ -6,7 +6,7 @@ import random
 # functions
 
 def setup_race():
-    """Set up the screen, finish line, and turtles."""
+    #Set up the screen, finish line, and turtles.
     screen = turtle.Screen()
     screen.title("Turtle Race!")
     screen.bgcolor("lightblue")
@@ -49,7 +49,7 @@ def race(turtles):
     return winner
 
 def announce_winner(winner):
-    """Display the winning turtle’s color."""
+    #Display the winning turtle’s color.
     winning_color = winner.pencolor()
     print(f"The {winning_color} turtle won!")
 
