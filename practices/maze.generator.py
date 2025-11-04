@@ -34,4 +34,4 @@ def is_solvable(row_grid, col_grid):
         if y > 0 and row_grid[y][x] == 0:
             stack.append((x, y-1))
 
-    return False 
+    return False    
