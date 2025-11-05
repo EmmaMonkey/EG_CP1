@@ -3,8 +3,13 @@
 import random
 import turtle 
 
+# Make function for generating code
 
-
+def generate_maze():
+    maze = [[],[],[],[],[],[],[]]
+    for c in maze:
+        for i in range (6):
+            c.append(random.randint(0,1))
 
 def is_solvable(row_grid, col_grid):
     size = len(row_grid) -1
