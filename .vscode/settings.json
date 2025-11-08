@@ -2,7 +2,7 @@
     "python-envs.pythonProjects": [
         {
             "path": "practices/row_computer.py",
-            "envManager": "ms-python.python:venv",
+            "envManager": "ms-python.python:system",
             "packageManager": "ms-python.python:pip"
         }
     ],
