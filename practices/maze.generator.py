@@ -1,3 +1,5 @@
+#EG 2nd Maze Generator
+
 # Import needed libraries
 import turtle
 import random
