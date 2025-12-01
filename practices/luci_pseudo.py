@@ -9,8 +9,6 @@ while True:
     
     if original.lower() == "done":
         break
-
-    if not 
 #make sure it is a number str() or int(),else print("invalid, please enter a number")
 #define the calculation equation
 #for product in factonal
