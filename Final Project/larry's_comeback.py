@@ -1,6 +1,6 @@
 #EG, 2nd Period, Larry's Comeback
 
-# LARRY'S COMEBACK 
+# Larry's Comeback
 
 # Variables
 # player_name = "Larry"                     
